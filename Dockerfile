@@ -8,7 +8,7 @@ ENV PATH=/usr/local/bin:$PATH \
 EXPOSE 8000
 WORKDIR /srv
 COPY . /srv
-
+# Test this pkg
 RUN yum update -y \
     && amazon-linux-extras enable python3.8 \
     && yum groupinstall -y "Development tools" \
